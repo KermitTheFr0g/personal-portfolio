@@ -1,9 +1,6 @@
 import { useState } from 'react';
 
-import Link from 'next/link';
-import Image from 'next/image';
-
-import logoImage from '../../public/images/kermit.jpg'
+import NavButton from '../NavButton';
 
 function TopNav(){
     const [mobileNavIsOpened, setMobileNavIsOpened] = useState(false);
@@ -48,23 +45,30 @@ function TopNav(){
 
     return (
         <>
-            <div className="justify-end m-5 justify-space-between md:pr-8 lg:pr-16 md:flex md:flex-wrap">
-                <div className='justify-self-start'>
-                    <Image src={logoImage} width={80} height={80} alt={'logo picture'}/>
-                </div>
+            <div className="justify-end hidden m-5 md:pr-8 lg:pr-16 md:flex md:flex-wrap">
                 {
                     Navigation.map(item => (
-                        <div className='m-3' key={item.id}>
-                            <Link href={item.link}>
-                                <a className=' md:text-2xl lg:text-3xl'>{item.name}</a>
-                            </Link>
-                        </div>
+                        <NavButton key={item.id} name={item.name} link={item.link}/>
                     )) 
                 }
             </div>
 
             <div className="flex flex-col md:hidden">
-                Mobile Top Nav
+                <div className="p-4 space-y-2 rounded shadow bg-top-nav-bg" onClick={toggleMobileNav}>
+                    <span className="block w-8 h-1 bg-gray-100 animate-pulse"></span>
+                    <span className="block w-8 h-1 bg-gray-100 animate-pulse"></span>
+                    <span className="block w-8 h-1 bg-gray-100 animate-pulse"></span>
+                    
+                    <div className={mobileNavIsOpened ? 'flex' : 'hidden'}>
+                        <ul className='flex flex-col p-3'>
+                            {
+                                Navigation.map(item => (
+                                    <NavButton key={item.id} name={item.name} link={item.link}/>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
             </div>
             
         </>

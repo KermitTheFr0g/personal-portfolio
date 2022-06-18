@@ -5,7 +5,21 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        shake: {
+          "0%": { transform: "rotate(2.5deg)"},
+          "50%": { transform: "rotate(-2.5deg)"},
+          "100%": { transform: "rotate(2.5deg)"},
+        }
+      },
+      animation: {
+        shake: "shake 0.5s ease-in-out infinite",
+      },
+      colors: {
+        'top-nav-bg': "#636363",
+      }
+    },
   },
   plugins: [],
 }
