@@ -1,14 +1,20 @@
+import Head from 'next/head'
+
 import PatriclesBackground from '../components/ParticlesBackground';
 import TopNav from '../components/modules/TopNav';
 import Profile from '../components/modules/Profile';
-import Socials from '../components/modules/Socials';
 import RecentPosts from '../components/modules/RecentPosts';
 
+import kermitFavicon from '../public/images/kermit.png';
 
 export default function Home() {
   return (
-    <div className='text-white'>
-        
+    <div className='overflow-hidden text-white'>
+      <Head>
+        <title>Oli Gray</title>
+        <link rel="icon" type='image/png' href={kermitFavicon} />
+      </Head>
+
       <div className='fixed z-[-1]'>
         <PatriclesBackground />
       </div>
@@ -16,8 +22,6 @@ export default function Home() {
       <TopNav />
 
       <Profile />
-
-      <Socials />
 
       <RecentPosts />
 

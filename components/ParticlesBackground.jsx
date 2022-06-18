@@ -8,7 +8,7 @@ function ParticlesBackground(){
                     "autoPlay": true,
                     "background": {
                       "color": {
-                        "value": "#505050"
+                        "value": "#324663"
                       },
                       "image": "",
                       "position": "50% 50%",

@@ -15,6 +15,18 @@ function RecentPosts() {
             title: 'Recent Post 2',
             date: '2020-01-01',
             content: "this is kinda even more cute xxxx"
+        },
+        {
+            id: 3,
+            title: 'Recent Post 1',
+            date: '2020-01-01',
+            content: "this is kinda cute xxxx"
+        },
+        {
+            id: 4,
+            title: 'Recent Post 2',
+            date: '2020-01-01',
+            content: "this is kinda even more cute xxxx"
         }
     ]
 

@@ -17,7 +17,8 @@ module.exports = {
         shake: "shake 0.5s ease-in-out infinite",
       },
       colors: {
-        'top-nav-bg': "#636363",
+        'top-nav-bg': "#21314a",
+        'profile-bg': '#273852'
       }
     },
   },
