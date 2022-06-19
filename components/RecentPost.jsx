@@ -11,7 +11,7 @@ function RecentPost({ title, date, content, id}){
       }, []);
 
     return (
-        <div data-aos="flip-up" className="p-3 m-5 border">
+        <div data-aos="flip-up" className="p-5 m-5 bg-profile-bg bg-opacity-80 rounded-2xl">
             <div className='font-bold'>{title}</div>
             <div>{content}</div>
             <div className='text-sm font-light'>{date}</div>

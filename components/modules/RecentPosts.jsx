@@ -33,7 +33,7 @@ function RecentPosts() {
 
     return (
         <>
-            <div className='flex flex-col w-10/12 m-auto md:w-1/2 md:text-3xl md:pt-20'>Recent Blog Posts</div>
+            <div className='flex flex-col w-10/12 m-auto md:mt-20 md:w-1/2 md:text-3xl md:pt-20'>Recent Blog Posts</div>
             <div className="flex flex-col w-10/12 m-auto md:w-1/2">
                 {
                     recentPosts.map(post => (

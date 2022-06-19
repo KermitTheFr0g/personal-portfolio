@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import NavButton from '../NavButton';
 
-function TopNav(){
+function TopNav({ selected }){
     const [mobileNavIsOpened, setMobileNavIsOpened] = useState(false);
 
     const toggleMobileNav = () => {
@@ -45,7 +45,7 @@ function TopNav(){
 
     return (
         <>
-            <div className="justify-end hidden m-5 md:pr-8 lg:pr-16 md:flex md:flex-wrap">
+            <div className="justify-end hidden p-5 md:pr-8 lg:pr-16 md:flex md:flex-wrap bg-profile-bg bg-opacity-80 rounded-2xl">
                 {
                     Navigation.map(item => (
                         <NavButton key={item.id} name={item.name} link={item.link}/>
