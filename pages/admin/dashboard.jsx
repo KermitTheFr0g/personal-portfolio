@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
+import Head from 'next/head';
 
-import WelcomeAdmin from '../../components/admin/WelcomeAdmin';
+import AdminHeader from '../../components/admin/AdminHeader';
 
 export async function getServerSideProps(){
     const user = true;
@@ -36,9 +37,12 @@ function Dashboard({ authenticated, user }){
 
     return(
         <>
-            <div className='m-auto'>
-                <WelcomeAdmin username={user.username}/>
-            </div>
+            <Head>
+                <title>Admin Dashboard</title>
+            </Head>
+
+            <AdminHeader user={user}/>
+
         </>
     )
 }

@@ -4,18 +4,22 @@ import Link from 'next/link';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function RecentPost({ title, date, content, id}){
+function RecentPost({ title, date, content, postLink}){
     useEffect(() => {
         AOS.init();
         AOS.refresh();
       }, []);
 
     return (
-        <div data-aos="flip-up" className="p-5 m-5 bg-profile-bg bg-opacity-80 rounded-2xl">
-            <div className='font-bold'>{title}</div>
-            <div>{content}</div>
-            <div className='text-sm font-light'>{date}</div>
-        </div>
+        <>
+            <Link href={postLink}>
+                <a data-aos="flip-up" className="p-5 m-5 bg-profile-bg bg-opacity-80 rounded-2xl">
+                    <div className='font-bold'>{title}</div>
+                    <div>{content}</div>
+                    <div className='text-sm font-light'>{date}</div>
+                </a>
+            </Link>
+        </> 
     )
 }
 

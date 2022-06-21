@@ -1,25 +1,36 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function WelcomeAdmin({ username }){
-    let morning;
+    // finding the time of day to return back to the user
+    const [tod, setTod] = useState();
     
     useEffect(() => {
         let hr = new Date().getHours();
         if(hr < 12){
-            morning = true;
+            setTod('morning')
+        } else if(hr > 17){
+            setTod('evening')
+        } else {
+            setTod('afternoon')
         }
     }, [])
     
-    return (
-        <>
-            {
-                morning ? 
-                <div className='text-center'>Good Morning {username}, Welcome admin dashboard</div> 
-                : 
-                <div className='text-center'>Good evening {username}, Welcome admin dashboard</div>
-            }
-        </>
-    )
+    switch(tod){
+        case 'morning':
+            return (
+                <div className='text-center'>Good Morning {username}</div> 
+            )
+        
+        case 'afternoon':
+            return(
+                <div className='text-center'>Good Afternoon {username}</div> 
+            )
+
+        case 'evening':
+            return(
+                <div className='text-center'>Good Evening {username}</div> 
+            )
+    }
 }
 
 export default WelcomeAdmin;

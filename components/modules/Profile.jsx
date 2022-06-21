@@ -16,9 +16,9 @@ function Profile(){
 
 
     return (
-        <div className='md:w-8/12 md:p-10 md:m-auto md:bg-profile-bg md:bg-opacity-80 md:rounded-2xl md:mt-10'>
-            <div className='flex flex-col justify-center w-10/12 pt-10 m-auto md:flex-row md:w-1/2'>
-                <div className='flex flex-col md:w-1/2' data-aos="fade-right">
+        <div className='md:w-11/12 lg:w-8/12 md:p-5 lg:p-10 md:m-auto md:bg-profile-bg md:bg-opacity-80 md:rounded-2xl md:mt-10'>
+            <div className='flex flex-col justify-center w-10/12 pt-10 m-auto lg:flex-row lg:w-1/2'>
+                <div className='flex flex-col lg:w-1/2' data-aos="fade-right">
                     <div className='text-3xl text-center md:text-5xl'>Oli Gray</div>
                     <div className='p-4 text-center text-l md:text-xl md:pt-11'>Software Developer, currently working in the web3 space and also a keen teacher and content creator</div>
                 </div>

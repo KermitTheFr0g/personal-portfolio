@@ -18,7 +18,8 @@ module.exports = {
       },
       colors: {
         'top-nav-bg': "#21314a",
-        'profile-bg': '#273852'
+        'profile-bg': '#273852',
+        'hover-border': '#1f2d42'
       }
     },
   },
