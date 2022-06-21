@@ -1,35 +1,33 @@
+import { useState,useEffect } from 'react';
+
 import RecentPost from '../RecentPost';
 
 
 function RecentPosts() {
-    // here we need to pull the recent posts
-    const recentPosts = [
-        {
-            id: 1,
-            title: 'Recent Post 1',
-            date: '2020-01-01',
-            content: "this is kinda cute xxxx"
-        },
-        {
-            id: 2,
-            title: 'Recent Post 2',
-            date: '2020-01-01',
-            content: "this is kinda even more cute xxxx"
-        },
-        {
-            id: 3,
-            title: 'Recent Post 1',
-            date: '2020-01-01',
-            content: "this is kinda cute xxxx"
-        },
-        {
-            id: 4,
-            title: 'Recent Post 2',
-            date: '2020-01-01',
-            content: "this is kinda even more cute xxxx"
-        }
-    ]
+    // when page loads get request for recent posts
+    const [recentPosts, setRecentPosts] = useState();
+    const [loading, setLoading] = useState(false);
 
+    useEffect(() => {
+        setLoading(true);
+        fetch('/api/posts/recent')
+            .then(response => response.json())
+            .then(data => {
+                setRecentPosts(data['recentPosts']);
+                setLoading(false);
+            })
+    }, [])
+
+    if(loading || !recentPosts){
+        return(
+            <>
+            <div className='flex flex-col w-10/12 m-auto md:mt-20 md:w-1/2 md:text-3xl md:pt-20'>Recent Blog Posts</div>
+            <div className="flex flex-col w-10/12 m-auto md:w-1/2 text-center text-3xl">
+                Loading Posts...
+            </div>
+        </>
+        )
+    }
 
     return (
         <>
