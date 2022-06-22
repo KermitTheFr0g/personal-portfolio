@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import PatriclesBackground from '../components/ParticlesBackground';
-import TopNav from '../components/modules/TopNav';
+import ParticlesBackground from '../../components/ParticlesBackground';
+import TopNav from '../../components/modules/TopNav';
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <div className='fixed z-[-1]'>
-        <PatriclesBackground />
+        <ParticlesBackground />
       </div>
 
       <TopNav />

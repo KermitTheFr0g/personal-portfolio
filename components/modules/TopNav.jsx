@@ -44,7 +44,7 @@ function TopNav({ selected }){
 
 
     return (
-        <>
+        <div className='text-white'>
             <div className="justify-end hidden p-5 md:pr-8 lg:pr-16 md:flex md:flex-wrap bg-profile-bg bg-opacity-80">
                 {
                     Navigation.map(item => (
@@ -71,7 +71,7 @@ function TopNav({ selected }){
                 </div>
             </div>
             
-        </>
+        </div>
     )
 }
 
