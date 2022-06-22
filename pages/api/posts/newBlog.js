@@ -6,16 +6,19 @@ export default function handler(req, res){
             return res.status(200).json({
                 error: 'A title must be included'
             })
-        } else if (!content){
+        } 
+        
+        if (!content){
             return res.status(200).json({
                 error: 'A content must be included'
             })
-        } else if (!date){
+        }
+        
+        if (!date){
             return res.status(200).json({
                 error: 'A date must be included'
             })
         }
-
 
         res.status(200).json({
             title: title,
