@@ -4,6 +4,7 @@ import PatriclesBackground from '../components/ParticlesBackground';
 import TopNav from '../components/modules/TopNav';
 import Profile from '../components/modules/Profile';
 import RecentPosts from '../components/modules/RecentPosts';
+import Footer from '../components/modules/Footer'
 
 import kermitFavicon from '../public/images/kermit.png';
 
@@ -24,6 +25,8 @@ export default function Home() {
       <Profile />
 
       <RecentPosts />
+
+      <Footer />
 
     </div>
 

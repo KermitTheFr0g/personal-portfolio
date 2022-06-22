@@ -22,9 +22,9 @@ function Profile(){
                     <div className='text-3xl text-center md:text-5xl'>Oli Gray</div>
                     <div className='p-4 text-center text-l md:text-xl md:pt-11'>Software Developer, currently working in the web3 space and also a keen teacher and content creator</div>
                 </div>
-                <div data-aos="fade-left">
-                    <Image className='rounded-full' src={logoImage} width={300} height={300} alt={'Logo for Oli'}/>
-                </div>
+
+                <Image className='rounded-full m-auto' src={logoImage} width={300} height={300} layout={'fixed'} alt={'Logo for Oli'}/>
+           
             </div>
             <Socials />
         </div>

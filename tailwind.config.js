@@ -19,7 +19,8 @@ module.exports = {
       colors: {
         'top-nav-bg': "#21314a",
         'profile-bg': '#273852',
-        'hover-border': '#1f2d42'
+        'hover-border': '#1f2d42',
+        'dark-text': '#6f819e'
       }
     },
   },
