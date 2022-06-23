@@ -4,8 +4,9 @@ import Head from 'next/head';
 import AdminHeader from '../../components/admin/AdminHeader';
 import PostBlog from '../../components/admin/PostBlog';
 
-export async function getServerSideProps(){
-    const user = false;
+export async function getServerSideProps({ req, res }){
+    
+    const user = true;
 
     if(!user){
         return{
@@ -18,7 +19,8 @@ export async function getServerSideProps(){
             props: {
                 authenticated: true,
                 user: {
-                    username: 'Kermit'
+                    username: 'kermit',
+
                 }
             }
         }
@@ -27,7 +29,7 @@ export async function getServerSideProps(){
 }
 
 
-function Dashboard({ authenticated, user }){
+function Dashboard({ authenticated, user,  }){
     if(!authenticated){
         return(
             <>
@@ -45,7 +47,6 @@ function Dashboard({ authenticated, user }){
             <AdminHeader user={user}/>
 
             <PostBlog />
-
         </>
     )
 }

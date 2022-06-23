@@ -22,7 +22,10 @@ module.exports = {
         'hover-border': '#1f2d42',
         'dark-text': '#6f819e',
         'button-bg': '#405a82',
-        'button-hover': '#344c70'
+        'button-hover': '#344c70',
+        'admin-primary-1': '#574476',
+        'admin-primary-1-elements': '#745c9c',
+        'admin-primary-2': '#1DC9B7'
       }
     },
   },
