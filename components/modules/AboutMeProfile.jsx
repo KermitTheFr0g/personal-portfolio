@@ -18,21 +18,21 @@ function AboutMeProfile(){
                     What Am I currently working on?
                 </div>
                 <p className='p-1'>
-                    
+                    what am i working on here
                 </p>
 
                 <div className='pt-3 text-xl'>
                     What am I looking to achieve in the next few years?
                 </div>
                 <p className='p-1'>
-                    
+                    what i would like to achieve
                 </p>
 
                 <div className='pt-3 text-xl'>
                     How am I working to achieve this goals?
                 </div>
                 <p className='p-1'>
-                    
+                    how i am going to achieve this
                 </p>
 
             </div>  
