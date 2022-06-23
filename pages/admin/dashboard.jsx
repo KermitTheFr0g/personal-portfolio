@@ -5,7 +5,7 @@ import AdminHeader from '../../components/admin/AdminHeader';
 import PostBlog from '../../components/admin/PostBlog';
 
 export async function getServerSideProps(){
-    const user = true;
+    const user = false;
 
     if(!user){
         return{

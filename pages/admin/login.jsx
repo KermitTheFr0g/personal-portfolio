@@ -1,6 +1,6 @@
 
 export async function getServerSideProps(){
-    const user = true;
+    const user = false;
 
     if(user){
         return{
