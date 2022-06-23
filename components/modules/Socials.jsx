@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 
 import SocialButton from '../SocialButton';
 
-import GithubImg from '/public/images/socials/github.png';
-import TwitterImg from '/public/images/socials/twitter.png';
-import LinkedInImg from '/public/images/socials/linkedin.png';
-import InstagramImg from '/public/images/socials/instagram.jpg';
-import YoutubeImg from '/public/images/socials/youtube.png';
+import GithubImg from '../../public/images/socials/github.png';
+import TwitterImg from '../../public/images/socials/twitter.png';
+import LinkedInImg from '../../public/images/socials/linkedin.png';
+import InstagramImg from '../../public/images/socials/instagram.jpg';
+import YoutubeImg from '../../public/images/socials/youtube.png';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
