@@ -23,7 +23,7 @@ function NotFound(){
                 </div>
                 
                 <div className='p-5'>
-                    {"The page you are trying to access doesn't exist"}
+                    This page does not exist
                 </div>
                 <div className='p-5'>
                     <Link href={'/'}>

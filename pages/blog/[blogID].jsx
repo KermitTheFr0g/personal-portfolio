@@ -23,13 +23,13 @@ function Blog(){
                 setBlogData(data);
                 setLoading(false);
             })
-    }, [])
+    }, [blogID])
 
 
     return (
         <>
             <Head>
-                <title>Oli's Blog {blogID}</title>
+                <title>{`Oli's Blog ${blogID}`}</title>
             </Head>
 
             <div className='fixed z-[-1]'>
