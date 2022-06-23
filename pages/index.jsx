@@ -33,3 +33,5 @@ export default function Home() {
 
 // https://coryhughart.com/
 // https://www.giftegwuenu.dev/
+// https://www.soumya-jit.tech/
+// https://blog.openreplay.com/creating-a-markdown-blog-powered-by-next-js-in-under-an-hour
