@@ -27,7 +27,7 @@ function Socials(){
         {
             id: 2,
             name: 'Twitter',
-            link: 'https://twitter.com/OGKermit_',
+            link: 'https://twitter.com/KermitTheJuicer',
             image: TwitterImg
         },
         {
