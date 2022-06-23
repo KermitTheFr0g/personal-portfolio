@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import TopNav from '../components/modules/TopNav';
 import ParticlesBackground from '../components/ParticlesBackground';
-
+import AboutMeProfile from '../components/modules/AboutMeProfile';
 
 function AboutMe(){
     
@@ -19,6 +19,9 @@ function AboutMe(){
             <TopNav />
 
             <div className='m-auto mt-10 text-4xl text-center text-white'>About Me</div>
+
+            <AboutMeProfile />
+
         </>
     )
 }
