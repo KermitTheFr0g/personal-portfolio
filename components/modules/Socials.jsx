@@ -22,7 +22,7 @@ function Socials(){
             id: 1,
             name: 'Github',
             link: 'https://github.com/KermitTheFr0g',
-            image: GithubImg
+            image: '../../public/images/socials/github.png'
         },
         {
             id: 2,
