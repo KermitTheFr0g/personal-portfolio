@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 
 import SocialButton from '../SocialButton';
 
-import GithubImg from '/public/images/socials/github.png';
-import TwitterImg from '/public/images/socials/twitter.png';
-import LinkedInImg from '/public/images/socials/linkedin.png';
-import InstagramImg from '/public/images/socials/instagram.jpg';
-import YoutubeImg from '/public/images/socials/youtube.png';
+//import GithubImg from '/public/images/socials/github.png';
+//import TwitterImg from '/public/images/socials/twitter.png';
+//import LinkedInImg from '/public/images/socials/linkedin.png';
+//import InstagramImg from '/public/images/socials/instagram.jpg';
+//import YoutubeImg from '/public/images/socials/youtube.png';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,31 +22,31 @@ function Socials(){
             id: 1,
             name: 'Github',
             link: 'https://github.com/KermitTheFr0g',
-            image: GithubImg
+            image: '/public/images/socials/github.png'
         },
         {
             id: 2,
             name: 'Twitter',
             link: 'https://twitter.com/OGKermit_',
-            image: TwitterImg
+            image: '/public/images/socials/twitter.png'
         },
         {
             id: 3,
             name: 'LinkedIn',
             link: 'https://www.linkedin.com/in/oli-gray-b22872214/',
-            image: LinkedInImg
+            image: '/public/images/socials/linkedin.png'
         },
         {
             id: 4,
             name: 'Youtube',
             link: 'https://www.youtube.com/channel/UCcAUm8tYx-kd1IWtdbW7RYA',
-            image: YoutubeImg
+            image: '/public/images/socials/youtube.png'
         },
         {
             id: 5,
             name: 'Instagram',
             link: 'https://www.instagram.com/oligray_fitness/',
-            image: InstagramImg
+            image: '/public/images/socials/instagram.jpg'
         }
       ]
 
