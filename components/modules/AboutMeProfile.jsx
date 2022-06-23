@@ -10,7 +10,7 @@ function AboutMeProfile(){
                 <p className='p-1'>
                     My name is Oli Gray I am currently studying cyber security and I am also a web developer. 
                     Along with my studies I am a lecturerer in college teaching Programming and Ditigal IT.
-                    On top of being a lecturer I am also working in the web3 space primarily with NFTs, building
+                    On top of being a lecturerer I am also working in the web3 space primarily with NFTs, building
                     contracts and developing sites to allow people to mint NFTs on.
                 </p>
 
