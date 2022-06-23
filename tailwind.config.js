@@ -20,7 +20,9 @@ module.exports = {
         'top-nav-bg': "#21314a",
         'profile-bg': '#273852',
         'hover-border': '#1f2d42',
-        'dark-text': '#6f819e'
+        'dark-text': '#6f819e',
+        'button-bg': '#405a82',
+        'button-hover': '#344c70'
       }
     },
   },

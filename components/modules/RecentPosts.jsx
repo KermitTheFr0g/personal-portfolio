@@ -22,7 +22,7 @@ function RecentPosts() {
         return(
             <>
             <div className='flex flex-col w-10/12 m-auto md:mt-20 md:w-1/2 md:text-3xl md:pt-20'>Recent Blog Posts</div>
-            <div className="flex flex-col w-10/12 m-auto md:w-1/2 text-center text-3xl">
+            <div className="flex flex-col w-10/12 m-auto text-3xl text-center md:w-1/2">
                 Loading Posts...
             </div>
         </>
@@ -35,7 +35,7 @@ function RecentPosts() {
             <div className="flex flex-col w-10/12 m-auto md:w-1/2">
                 {
                     recentPosts.map(post => (
-                        <RecentPost key={post.id} title={post.title} date={post.date} content={post.content} postLink={`/blog/post/${post.id}`}/>
+                        <RecentPost key={post.id} title={post.title} date={post.date} content={post.content} postLink={`/blog/${post.id}`}/>
                     ))
                 }
             </div>
