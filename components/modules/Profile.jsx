@@ -16,7 +16,7 @@ function Profile(){
 
 
     return (
-        <div className='p-10 rounded-xl lg:mt-20 lg:w-5/12 lg:m-auto lg:bg-profile-bg'>
+        <div className='p-10 rounded-xl lg:mt-20 lg:w-5/12 lg:m-auto lg:bg-profile-bg lg:bg-opacity-80'>
             <div className='flex flex-col md:flex-row'>
                 <div className='flex flex-col lg:w-1/2' data-aos="fade-right">
                     <div className='text-3xl text-center md:text-5xl'>Oli Gray</div>
