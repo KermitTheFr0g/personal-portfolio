@@ -17,6 +17,8 @@ function AboutMe(){
             </div>
 
             <TopNav />
+
+            <div className='m-auto mt-10 text-4xl text-center text-white'>About Me</div>
         </>
     )
 }
