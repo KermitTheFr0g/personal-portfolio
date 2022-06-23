@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
-import PatriclesBackground from './components/ParticlesBackground';
-import TopNav from './components/modules/TopNav';
-import Profile from './components/modules/Profile';
-import RecentPosts from './components/modules/RecentPosts';
-import Footer from './components/modules/Footer'
+import PatriclesBackground from '../components/ParticlesBackground';
+import TopNav from '../components/modules/TopNav';
+import Profile from '../components/modules/Profile';
+import RecentPosts from '../components/modules/RecentPosts';
+import Footer from '../components/modules/Footer'
 
 
 export default function Home() {
