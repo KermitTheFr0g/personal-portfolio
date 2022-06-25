@@ -1,5 +1,6 @@
 ---
-title: My first blog'
+slug: 'my-second-blog'
+title: My second blog'
 date: '06-24-2022'
 tags:
   - blog
