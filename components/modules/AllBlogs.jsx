@@ -5,7 +5,7 @@ function AllBlogs({ blogPosts }){
             {
                 blogPosts?.map((blog, i) => {
                     return (
-                        <a className="p-2" key={i} href={`/blog/`}>
+                        <a className="p-2" key={i} href={`/blog/${blog.slug}`}>
                             <div>{blog.title}</div>
                             <div>{blog.description}</div>
                         </a>

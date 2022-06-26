@@ -4,13 +4,13 @@ import { useRouter } from 'next/router';
 import fs from 'fs';
 import appRoot from 'app-root-path'
 import matter from 'gray-matter'
-import md from 'markdown-it'
+import ReactMarkdown from 'react-markdown';
 
 import Head from 'next/head';
 import TopNav from '../../components/modules/TopNav';
 import ParticlesBackground from '../../components/ParticlesBackground';
 import BlogContent from '../../components/modules/BlogContent'
-
+import Footer from '../../components/modules/Footer';
 
 export async function getServerSideProps({ params: { blogID }}){
     const mdFile = fs.readFileSync(`${appRoot}/posts/${blogID}.md`);
@@ -26,7 +26,7 @@ export async function getServerSideProps({ params: { blogID }}){
 
 function Blog({ frontMatter, content }){
     return (
-        <>
+        <div className='dark'>
             <Head>
                 <title>{`${frontMatter.title}`}</title>
             </Head>
@@ -37,10 +37,14 @@ function Blog({ frontMatter, content }){
             
             <TopNav />
             
-            <div className='w-1/2 m-auto bg-profile-bg'>
-                <div className='mx-auto prose text-white' dangerouslySetInnerHTML={{ __html: md().render(content)}}></div>
+            <div className='p-5 m-auto mt-10 lg:w-2/3 lg:bg-profile-bg rounded-xl lg:bg-opacity-80'>
+                <ReactMarkdown className='m-auto prose prose-invert md:prose-lg lg:prose-xl'>
+                    {content}
+                </ReactMarkdown>
             </div>
-        </>
+
+            <Footer />
+        </div>
 
     )
 }
