@@ -2,18 +2,16 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 import fs from 'fs';
-import appRoot from 'app-root-path'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown';
 
 import Head from 'next/head';
 import TopNav from '../../components/modules/TopNav';
 import ParticlesBackground from '../../components/ParticlesBackground';
-import BlogContent from '../../components/modules/BlogContent'
 import Footer from '../../components/modules/Footer';
 
 export async function getServerSideProps({ params: { blogID }}){
-    const mdFile = fs.readFileSync(`${appRoot}/posts/${blogID}.md`);
+    const mdFile = fs.readFileSync(`../../posts/${blogID}.md`);
     const { data: frontMatter, content } = matter(mdFile);
     
     return {

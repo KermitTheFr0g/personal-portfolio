@@ -8,11 +8,10 @@ import AllBlogs from '../../components/modules/AllBlogs';
 
 export async function getStaticProps(){ 
   const fs = require('fs');
-  const appRoot = require('app-root-path');  
   
-  const files = fs.readdirSync(`${appRoot}/posts`);
+  const files = fs.readdirSync(`../../posts`);
   const posts = files.map((fileName) => {
-    const readFiles = fs.readFileSync(`${appRoot}/posts/${fileName}`);
+    const readFiles = fs.readFileSync(`../../posts/${fileName}`);
     const { data: blogData } = matter(readFiles);
   
     return blogData
