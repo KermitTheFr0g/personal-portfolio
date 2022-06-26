@@ -1,35 +1,34 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+import fs from 'fs';
+import appRoot from 'app-root-path'
+import matter from 'gray-matter'
+import md from 'markdown-it'
+
 import Head from 'next/head';
 import TopNav from '../../components/modules/TopNav';
 import ParticlesBackground from '../../components/ParticlesBackground';
 import BlogContent from '../../components/modules/BlogContent'
 
-function Blog(){
-    // getting the query from request
-    const router = useRouter();
-    const { blogID } = router.query;
 
-    // setting states
-    const [loading, setLoading] = useState(true);
-    const [blogData, setBlogData] = useState({})
+export async function getServerSideProps({ params: { blogID }}){
+    const mdFile = fs.readFileSync(`${appRoot}/posts/${blogID}.md`);
+    const { data: frontMatter, content } = matter(mdFile);
+    
+    return {
+        props: {
+            frontMatter,
+            content,
+        }
+    }
+}
 
-    useEffect(() => {
-        setLoading(true);
-        fetch(`/api/posts/${blogID}`)
-            .then(response => response.json())
-            .then(data => {
-                setBlogData(data);
-                setLoading(false);
-            })
-    }, [blogID])
-
-
+function Blog({ frontMatter, content }){
     return (
         <>
             <Head>
-                <title>{`Oli's Blog ${blogID}`}</title>
+                <title>{`${frontMatter.title}`}</title>
             </Head>
 
             <div className='fixed z-[-1]'>
@@ -37,8 +36,10 @@ function Blog(){
             </div>
             
             <TopNav />
-
-            <BlogContent title={blogData.title} content={blogData.content} date={blogData.date} loading={loading}/>
+            
+            <div className='w-1/2 m-auto bg-profile-bg'>
+                <div className='mx-auto prose text-white' dangerouslySetInnerHTML={{ __html: md().render(content)}}></div>
+            </div>
         </>
 
     )
