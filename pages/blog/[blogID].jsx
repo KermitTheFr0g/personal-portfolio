@@ -51,8 +51,12 @@ function Blog({ frontMatter, content }){
             </div>
             
             <TopNav />
-            
-            <div className='p-5 m-auto mt-10 lg:w-2/3 lg:bg-profile-bg rounded-xl lg:bg-opacity-80'>
+
+            <div className='hidden m-auto mt-10 text-center text-white md:block md:text-3xl lg:text-6xl'>
+                {frontMatter.title}
+            </div>
+
+            <div className='p-5 m-auto md:mt-10 lg:w-2/3 lg:bg-profile-bg rounded-xl lg:bg-opacity-80'>
                 <ReactMarkdown className='m-auto prose prose-invert md:prose-lg lg:prose-xl'>
                     {content}
                 </ReactMarkdown>

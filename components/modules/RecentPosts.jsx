@@ -35,7 +35,7 @@ function RecentPosts() {
             <div className="flex flex-col w-10/12 m-auto md:w-1/2">
                 {
                     recentPosts.map(post => (
-                        <RecentPost key={post.id} title={post.title} date={post.date} content={post.content} postLink={`/blog/${post.id}`}/>
+                        <RecentPost key={post.id} title={post.title} date={post.date} description={post.description} postLink={`/blog/${post.slug}`}/>
                     ))
                 }
             </div>

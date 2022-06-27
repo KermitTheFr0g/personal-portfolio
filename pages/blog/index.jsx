@@ -38,6 +38,13 @@ function Blog({ posts }) {
 
       <TopNav />
 
+
+      <div className='flex flex-row'>
+        <div>Search Bar</div>
+        <button>Search</button>
+      </div>
+
+
       <AllBlogs blogPosts={posts}/>
 
     </div>
