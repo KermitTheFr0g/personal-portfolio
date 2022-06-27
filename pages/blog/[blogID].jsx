@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+import path from 'path'
 import fs from 'fs';
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown';
@@ -26,9 +27,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { blogID }}){
-    const files = fs.readdirSync('posts');
-    console.log(files)
-    const mdFile = fs.readFileSync(`posts/${blogID}.md`);
+    const mdFile = fs.readFileSync(path.join(process.cwd(), 'posts', `${blogID}.md`));
     const { data: frontMatter, content } = matter(mdFile);
     
     return {

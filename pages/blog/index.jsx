@@ -9,9 +9,9 @@ import TopNav from '../../components/modules/TopNav';
 import AllBlogs from '../../components/modules/AllBlogs';
 
 export async function getStaticProps(){   
-  const files = fs.readdirSync(`../posts`);
+  const files = fs.readdirSync(`posts`);
   const posts = files.map((fileName) => {
-    const readFiles = fs.readFileSync(`../posts/${fileName}`);
+    const readFiles = fs.readFileSync(`posts/${fileName}`);
     const { data: blogData } = matter(readFiles);
   
     return blogData
