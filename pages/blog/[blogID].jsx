@@ -10,7 +10,22 @@ import TopNav from '../../components/modules/TopNav';
 import ParticlesBackground from '../../components/ParticlesBackground';
 import Footer from '../../components/modules/Footer';
 
-export async function getServerSideProps({ params: { blogID }}){
+export async function getStaticPaths() {
+    // get slugs
+    const files = fs.readdirSync("posts");
+    const paths = files.map((filename) => ({
+      params: {
+        blogID: filename.replace(".md", ""),
+      },
+    }));
+  
+    return {
+      paths,
+      fallback: false,
+    };
+}
+
+export async function getStaticProps({ params: { blogID }}){
     const files = fs.readdirSync('posts');
     console.log(files)
     const mdFile = fs.readFileSync(`posts/${blogID}.md`);
