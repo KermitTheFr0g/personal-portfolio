@@ -11,6 +11,8 @@ import ParticlesBackground from '../../components/ParticlesBackground';
 import Footer from '../../components/modules/Footer';
 
 export async function getServerSideProps({ params: { blogID }}){
+    const files = fs.readdirSync('posts');
+    console.log(files)
     const mdFile = fs.readFileSync(`posts/${blogID}.md`);
     const { data: frontMatter, content } = matter(mdFile);
     
