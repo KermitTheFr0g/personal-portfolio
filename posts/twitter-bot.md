@@ -80,4 +80,3 @@ Now we have the bot up and running, anytime a user tweets that matches one of th
 
 ## Further Development
 Feel free to fork the project and make any changes you want. You can make the bot more complex by adding different replies for different types of tweets.
-
