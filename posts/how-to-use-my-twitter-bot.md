@@ -1,17 +1,20 @@
 ---
-slug: twitter-bot
-title: Twitter bot tutorial
-description: This is a tutorial how to use my own twitter bot
-date:  06-24-2022
+slug: how-to-use-my-twitter-bot
+title: How to use my twitter bot
+image_url: /blog-images/twitter-bot.png
+description: This is the tutorial which can also been found on my github. Showing how to setup and my twitter bot
+date: 29-06-2022
 tags:
-  - node js
+  - nodejs
+  - youtube
   - twitter
+  - bot
 ---
 
 # Twitter Bot
 
 ## About the project
-This project is a simple twitter bot that takes twitter userIDs and watches them for when they tweet. It can then be programmed to reply with a specific message to these users. Perfect for trolling your friends on twitter or just for fun.
+This project is a simple twitter bot that takes twitter userIDs and watches them for when they tweet. It can then be programmed to reply with a specific message to these users. Perfect for trolling your friends on twitter or just for fun. You can find the repo on my GitHub [here](https://github.com/KermitTheFr0g/twitter-bot)
 
 ## Getting started 
 It is very simple to get started, however the first thing you're going to need is to have a twitter account. You can create one [here](https://twitter.com/). You are also going to need to apply for a twitter developer account this can be done [here](https://developer.twitter.com/en/portal/dashboard).
@@ -80,3 +83,8 @@ Now we have the bot up and running, anytime a user tweets that matches one of th
 
 ## Further Development
 Feel free to fork the project and make any changes you want. You can make the bot more complex by adding different replies for different types of tweets.
+
+## Twitter Bot
+I am going to be making a blog and YouTube video which delves into the simple code behind this bot very soon!
+
+-Oli

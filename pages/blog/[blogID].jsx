@@ -51,6 +51,10 @@ function Blog({ frontMatter, content }){
             
             <TopNav />
 
+            {
+                frontMatter.youtubeVideo ? <div className='text-white'>THIS HAS A YOUTUBVE VIDEO ASSOCIATED</div> : <div></div>
+            }
+
             <div className='hidden m-auto mt-10 text-center text-white md:block md:text-3xl lg:text-6xl'>
                 {frontMatter.title}
             </div>
