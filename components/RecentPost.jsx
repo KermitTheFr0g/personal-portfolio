@@ -15,7 +15,7 @@ function RecentPost({ title, date, description, postLink}){
             <Link href={postLink}>
                 <a data-aos="flip-up" className="p-5 m-5 bg-profile-bg bg-opacity-80 rounded-2xl">
                     <div className='font-bold'>{title}</div>
-                    <div>{description}</div>
+                    <div className='italic'>{description}</div>
                     <div className='text-sm font-light'>{date}</div>
                 </a>
             </Link>
