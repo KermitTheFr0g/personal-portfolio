@@ -59,7 +59,7 @@ function Blog({ frontMatter, content }){
                 {frontMatter.title}
             </div>
 
-            <div className='p-5 m-auto md:mt-10 lg:w-2/3 lg:bg-profile-bg rounded-xl lg:bg-opacity-80'>
+            <div className='p-5 m-auto md:mt-10 lg:w-5/12 lg:bg-profile-bg rounded-xl lg:bg-opacity-80'>
                 <ReactMarkdown className='m-auto prose prose-invert md:prose-lg lg:prose-xl'>
                     {content}
                 </ReactMarkdown>
