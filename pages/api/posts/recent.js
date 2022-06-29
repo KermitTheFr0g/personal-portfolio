@@ -15,8 +15,6 @@ export default async function hander(req, res){
             return frontMatter
         })
 
-        console.log(posts);
-
         res.status(200).json({
             recentPosts: posts
         })
