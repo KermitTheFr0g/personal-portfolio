@@ -8,9 +8,9 @@ function AboutMeProfile(){
             <div className='flex flex-col p-5 m-auto text-white lg:w-2/3 lg:bg-profile-bg rounded-xl'>
                 <div className='p-1 text-xl'>Welcome!</div>
                 <p className='p-1'>
-                    My name is Oli Gray I am currently studying cyber security and I am also a web developer. 
-                    Along with my studies I am a lecturer in college teaching Programming and Ditigal IT.
-                    On top of being a lecturer I am also working in the web3 space primarily with NFTs, building
+                    My name is Oli Gray and I am currently studying cyber security, I am also a web developer. 
+                    Alongside my studies I am a lecturer at a college where I teach Programming and Digital IT. 
+                    On top of all this I am also working in web3 space. This primarily consists of NFTs , building 
                     contracts and developing sites to allow people to mint NFTs on.
                 </p>
 
