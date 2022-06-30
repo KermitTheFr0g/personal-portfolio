@@ -14,7 +14,7 @@ function Uses(){
     return(
         <div>
             <Head>
-                <title>Oli Gray</title>
+                <title>Uses</title>
             </Head>
 
             <div className='fixed z-[-1]'>

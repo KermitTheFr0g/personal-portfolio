@@ -49,12 +49,6 @@ function AboutMeProfile(){
                     books to recommend for me or want recommendations also feel free to contact me.
                 </p>
 
-                <p className='p-1'>
-                    When I am not coding or trying to break stuff I enjoy fitness and reading. You can follow my fitness journey 
-                    <a className='pl-1 text-purple-300 underline' href="https://www.instagram.com/oligray_fitness/">here</a>. If you have any books
-                    to recommend or want any tips for working out (although I am not a PT) feel free to contact me.
-                </p>
-
             </div>  
         </>
     )
