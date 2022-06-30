@@ -42,6 +42,14 @@ function AboutMeProfile(){
                     When I am not coding...
                 </div>
                 <p className='p-1'>
+                    With all this work you must be wondering how I get any time to myself or if I have any hobbies of my own. Well yes I do, 
+                    when I am not busy coding or trying to break things I enjoy training at the gym and or reading various books. 
+                    You can follow my fitness journey <a className='pl-1 text-purple-300 underline' href="https://www.instagram.com/oligray_fitness/">here</a>. 
+                    If you would like any tips or advice on fitness and how to better yourself then just contact me (remember I am not a PT). Also if you have any 
+                    books to recommend for me or want recommendations also feel free to contact me.
+                </p>
+
+                <p className='p-1'>
                     When I am not coding or trying to break stuff I enjoy fitness and reading. You can follow my fitness journey 
                     <a className='pl-1 text-purple-300 underline' href="https://www.instagram.com/oligray_fitness/">here</a>. If you have any books
                     to recommend or want any tips for working out (although I am not a PT) feel free to contact me.

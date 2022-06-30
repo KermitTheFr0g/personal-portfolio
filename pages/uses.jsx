@@ -49,9 +49,9 @@ function Uses(){
 
                 <ul className='p-1'>
                     <li> - Custom Built PC</li>
-                    <li> - LG 27GL850-B 27" 2560x1440 144Hz</li>
-                    <li> - Samsung UJ590 32" 4k</li>
-                    <li> - Philips 243V7QJABF 24" IPS</li>
+                    <li> - {'LG 27GL850-B 27" 2560x1440 144Hz'}</li>
+                    <li> - {'Samsung UJ590 32" 4k'}</li>
+                    <li> - {'Philips 243V7QJABF 24" IPS'}</li>
                     <li> - Blue Yeti Microphone</li>
                     <li> - Astro A50s</li>
                     <li> - Corsair K70 keyboard</li>
