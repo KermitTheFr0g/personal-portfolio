@@ -1,4 +1,9 @@
+import { useEffect } from 'react';
+
 import Head from 'next/head';
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import ParticlesBackground from '../components/ParticlesBackground';
 import TopNav from '../components/modules/TopNav';
@@ -10,6 +15,10 @@ import SetupImg from '../public/images/setup.png'
 import Image from 'next/image';
 
 function Uses(){
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
 
     return(
         <div>
@@ -27,7 +36,7 @@ function Uses(){
                 Uses
             </div>
 
-            <div className='p-5 m-auto text-white md:mt-10 lg:w-5/12 lg:bg-profile-bg rounded-xl lg:bg-opacity-80'>
+            <div data-aos='fade-up' className='p-5 m-auto text-white md:mt-10 lg:w-5/12 lg:bg-profile-bg rounded-xl lg:bg-opacity-80'>
                 <p>                
                     Here is a list of tools and hardware that I use. I will try and keep this as updated
                     as possible and update this page when any tools or hardware change in my day to day work.   
@@ -65,7 +74,7 @@ function Uses(){
                 <ul className='p-1'>
                     <li> - Editor - Visual Studio Code</li>
                     <li> - Colour Theme - <a className='text-purple-300 underline' href="https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark">Atom One Dark Theme</a></li>
-                    <li> - Terminal(When on mac) - I use both ITerm and Hyper</li>
+                    <li> - Terminal (When on mac) - I use both ITerm and Hyper</li>
                 </ul>
                 
                 <div className='p-1 text-xl'>

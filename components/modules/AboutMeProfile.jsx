@@ -1,11 +1,21 @@
+import { useEffect } from 'react';
+
 import Image from 'next/image';
 import Stats from '../modules/MyStats';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function AboutMeProfile(){
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     return(
         <>
             <Stats></Stats>
-            <div className='flex flex-col p-5 m-auto text-white lg:w-2/3 lg:bg-profile-bg rounded-xl'>
+            <div data-aos='fade-up' className='flex flex-col p-5 m-auto text-white lg:w-2/3 lg:bg-profile-bg rounded-xl'>
                 <div className='p-1 text-xl'>Welcome!</div>
                 <p className='p-1'>
                     My name is Oli Gray and I am currently studying cyber security, I am also a web developer. 
