@@ -22,4 +22,7 @@ After installing NextJS a simple `npm run dev` and your web application is up an
 
 ## What is TailwindCSS?
 
+TailwindCSS is a CSS framework that helps to build website faster and more easily. You can use classes to build custom designs instead of the traditional way of writing CSS. This makes writing CSS much faster and we don't need to come up with name for our CSS classes because the CSS is writen straight into the `className`. It is also very easy to make the website responsive using TailwindCSS.
+
+## Setting up a NextJS Project
 
