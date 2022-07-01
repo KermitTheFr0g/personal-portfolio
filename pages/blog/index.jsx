@@ -16,7 +16,7 @@ export async function getStaticProps(){
   const posts = files.map((fileName) => {
     const readFiles = fs.readFileSync(`posts/${fileName}`);
     const { data: blogData } = matter(readFiles);
-  
+
     return blogData
   })
 
