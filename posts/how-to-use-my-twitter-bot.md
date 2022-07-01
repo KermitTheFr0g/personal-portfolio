@@ -4,6 +4,7 @@ title: How to use my twitter bot
 image_url: /blog-images/twitter-bot.png
 description: This is the tutorial which can also been found on my github. Showing how to setup and my twitter bot
 date: 29-06-2022
+status: posted
 tags:
   - nodejs
   - youtube

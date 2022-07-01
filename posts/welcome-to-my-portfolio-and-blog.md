@@ -4,6 +4,7 @@ title: Welcome to my Portfolio and Blog
 image_url: /blog-images/first-blog.png
 description: A short welcome to both my portfolio and my blog.
 date: 28-06-2022
+status: posted
 tags:
   - blog
   - youtube

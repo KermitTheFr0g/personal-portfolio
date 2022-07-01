@@ -13,11 +13,19 @@ import Footer from '../../components/modules/Footer';
 
 export async function getStaticProps(){   
   const files = fs.readdirSync(`posts`);
-  const posts = files.map((fileName) => {
+  let posts = files.map((fileName) => {
     const readFiles = fs.readFileSync(`posts/${fileName}`);
     const { data: blogData } = matter(readFiles);
 
+    if(blogData.status !== 'posted'){
+      return;
+    }
+
     return blogData
+  })
+
+  posts = posts.filter(element => {
+    return element !== undefined
   })
 
   return {

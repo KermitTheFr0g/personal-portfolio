@@ -4,6 +4,7 @@ title: How to use NextJS and TailwindCSS
 image_url: /blog-images/first-blog.png
 description: This is an introduction on how to use NextJS and the CSS framework called TailwindCSS
 date: 28-06-2022
+status: draft
 tags:
   - blog
   - youtube

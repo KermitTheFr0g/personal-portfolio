@@ -12,11 +12,21 @@ export default async function hander(req, res){
             const readFile = fs.readFileSync(path.join(process.cwd(), 'posts', `${fileName}`));
             const { data: frontMatter } = matter(readFile);
 
-            return frontMatter
+            if(frontMatter.status !== 'posted'){
+                return
+            }
+
+            return frontMatter;
         })
 
+        const results = posts.filter(element => {
+            return element !== undefined;
+        })
+
+        console.log(results);
+
         res.status(200).json({
-            recentPosts: posts
+            recentPosts: results
         })
     } else {
         res.status(400);

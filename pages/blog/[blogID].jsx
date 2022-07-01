@@ -30,6 +30,12 @@ export async function getStaticProps({ params: { blogID }}){
     const mdFile = fs.readFileSync(path.join(process.cwd(), 'posts', `${blogID}.md`));
     const { data: frontMatter, content } = matter(mdFile);
     
+    if(frontMatter.status !== 'posted'){
+        return {
+            notFound: true
+        }
+    }
+
     return {
         props: {
             frontMatter,
