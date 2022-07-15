@@ -26,3 +26,12 @@ Although I had previously used React these were all new concepts to me so not on
 The research that has occured in the background of this project is was intense and has taken as much time as the coding and development of the project itself. In order to ensure that the development was smooth and the end product was good for the end-user and secure.
 
 ## Research
+
+There is a lot of research that has gone into the project, not only research into tools and technology. A lot of research into the workings of NFTs and the blockchain, how these worked and how other projects also operated. Although others in the project understood how to operate with NFTS and how they worked I wanted the most understanding before even beginning to look into the requirements for the project.
+
+This insisted in a lot of YouTube videos and reading medium articles. 
+
+Now moving onto the project itself, there were a few requirements for me as a developer. I needed to create the imagery (I will go more into this shortly), create a responsive site, and also write the smart contract to allow people to mint the NFTs. These all need to then be connected together to ensure that a user is able to mint an NFT from our own site.
+
+## Process of developing a project
+
