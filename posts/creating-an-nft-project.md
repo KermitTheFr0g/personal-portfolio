@@ -33,5 +33,12 @@ This insisted in a lot of YouTube videos and reading medium articles.
 
 Now moving onto the project itself, there were a few requirements for me as a developer. I needed to create the imagery (I will go more into this shortly), create a responsive site, and also write the smart contract to allow people to mint the NFTs. These all need to then be connected together to ensure that a user is able to mint an NFT from our own site.
 
+## Explaining the features of an NFT
+
+Explain in basic terms what and how an nft works...
+
 ## Process of developing a project
 
+There are a few main stages for developing the project, of course your project could differ from how I have moved through the stages of mine. The first stage of the project was to create the imagery. In order to do this I had multiple layers for the images, an example for this is the head, body, and some sort of accessory. A random item from each of these layers needs to be chosen to then create a new image all looking slightly unique. This was easy to accomplish simply by using [HashLips Art Engine](https://github.com/HashLips/hashlips_art_engine). This allowed me to configure the items that were more rare and output both the meta data and the images into two seperate folders, ready to be uploaded to IPFS (InterPlanetary File System). This is a decentralised file system which is where the images and metadata is stored.
+
+##
