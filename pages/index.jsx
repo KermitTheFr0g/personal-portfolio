@@ -9,7 +9,7 @@ import Footer from '../components/modules/Footer'
 
 export default function Home() {
   return (
-    <div className='overflow-hidden text-white'>
+    <div className='overflow-hidden text-white flex flex-col min-h-screen justify-between'>
       <Head>
         <title>Oli Gray</title>
       </Head>

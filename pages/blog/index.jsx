@@ -39,7 +39,7 @@ function Blog({ posts }) {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
-    <div className='overflow-hidden text-white'>
+    <div className='overflow-hidden text-white flex flex-col min-h-screen justify-between'>
       <Head>
         <title>Blog</title>
       </Head>
